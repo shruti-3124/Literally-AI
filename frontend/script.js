@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const apiEndpoint = async (endpoint, data) => {
     try {
-      const result = await axios.post(`http://localhost:5000${endpoint}`, data);
+      const result = await axios.post(`https://literally-ai.onrender.com${endpoint}`, data);
       return result.data;
     } catch (error) {
       console.error('Error:', error);
